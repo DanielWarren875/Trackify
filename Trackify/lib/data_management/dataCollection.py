@@ -18,7 +18,7 @@ class collectData():
 	def __init__(self):
 		global db
 		global app
-		cred = credentials.Certificate('/Users/danielwarren/Desktop/statsproj-589e7-firebase-adminsdk-3i4ip-a047e0caae.json')
+		cred = credentials.Certificate()
 		app = firebase_admin.initialize_app(cred)
 		db = firestore.client()
 		
